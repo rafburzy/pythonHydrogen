@@ -21,4 +21,8 @@ u = [sqrt(2)*U*sin(2*pi*f*k) for k in t]
 
 # plotting the voltage
 %matplotlib inline
-plt.plot(t, u);
+plt.style.use("ggplot")
+plt.plot(t, u, label="U")
+plt.legend()
+plt.xlabel("Time [s]")
+plt.ylabel("Voltage [V]");
